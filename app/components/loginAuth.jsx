@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from 'next/link'
-import  Auth  from './auth'
+import Auth  from './auth'
 
 const LoginAuth = async() => {
 	const user = await Auth()
@@ -12,7 +12,7 @@ const LoginAuth = async() => {
 	
 	const actionURL = user ? "/api/auth/signout" : "/api/auth/signin"
 	
-	{/*console.log(user)*/}
+
 	
 	
 	
@@ -27,15 +27,19 @@ const LoginAuth = async() => {
 			
 			{
 				user ? 
-				<div className="rounded-full w-8 h-8">
-				 <Image
-						className={'w-full h-full object-cover rounded-full'}
-						src={user.image}
-						height={150}
-						width={150}
-						alt="Lemoll Qyuu"
+				<Link href="/users">
+					<div className="rounded-full w-8 h-8">
+						
+						<Image
+							className={'w-full h-full object-cover rounded-full'}
+							src={user.image}
+							height={150}
+							width={150}
+							alt="Lemoll Qyuu"
 						/>
-				</div>
+						
+					</div>
+				</Link>
 				
 				: 
 				null

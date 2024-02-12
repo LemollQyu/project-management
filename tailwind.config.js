@@ -27,7 +27,13 @@ module.exports = {
 	  animation: {
 		  'slide': 'slide 8s linear infinite',
 		
-	  }
+	  },
+    fontFamily: {
+      myFont: ["var(--myFont)"],
+    },
+
+
+
     },
   },
   plugins: [],

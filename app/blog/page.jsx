@@ -1,9 +1,12 @@
 import Link from "next/link"
+import ButtonBlog from "./comp/buttonBlog"
 
 
 const Blog = () => {
-
-  
+	
+	
+	
+	
   return (
     <>
       <div>
@@ -12,69 +15,22 @@ const Blog = () => {
           <h1 className="font-medium text-2xl mb-8 tracking-tighter">
             read my blog
           </h1>
-          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2023/07/memahami.html">
-            <div className="w-full flex flex-col">
-              <p className="text-neutral-900  tracking-tight">
-                Memahami
-              </p>
-              <p className="text-neutral-600 ">
-                1,036,970 views
-              </p>
-            </div>
-          </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2023/05/topeng.html3">
-            <div className="w-full flex flex-col">
-              <p className="text-neutral-900  tracking-tight">
-                Topeng Mask
-              </p>
-              <p className="text-neutral-600 ">
-                16,500 views
-              </p>
-            </div>
-          </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2022/12/giliran.html">
-            <div className="w-full flex flex-col">
-              <p className="text-neutral-900  tracking-tight">
-                Giliran
-              </p>
-              <p className="text-neutral-600 ">
-                88,220 views
-              </p>
-            </div>
-          </Link>
+		  <ButtonBlog linkHref="https://arqn09.blogspot.com/2023/07/memahami.html"  kata="Memahami" />
+		  <ButtonBlog linkHref="https://arqn09.blogspot.com/2023/05/topeng.html3"  kata="Topeng Mask" />
+		  <ButtonBlog linkHref="https://arqn09.blogspot.com/2022/12/giliran.html"  kata="Giliran" />
+		  <ButtonBlog linkHref="https://arqn09.blogspot.com/2022/12/suaramu.html"  kata="Suaramu" />
+		  <ButtonBlog linkHref="https://arqn09.blogspot.com/2022/12/lagi-dengan-suaramu.html"  kata="Lagi Dengan Suaramu" />
+          
+          
+         
+          
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="https://arqn09.blogspot.com/2022/12/suaramu.html"
+            href="https://arqn09.blogspot.com/2022/11/masa-lalu.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Suaramu
-              </p>
-              <p className="text-neutral-600 ">
-                20,574 views
-              </p>
-            </div>
-          </Link>
-          <Link
-            className="flex flex-col space-y-1 mb-4"
-            href="https://arqn09.blogspot.com/2022/12/lagi-dengan-suaramu.html"
-          >
-            <div className="w-full flex flex-col">
-              <p className="text-neutral-900  tracking-tight">
-                Lagi dengan suaramu
-              </p>
-              <p className="text-neutral-600 ">
-                11,260 views
-              </p>
-            </div>
-          </Link>
-          <Link
-            className="flex flex-col space-y-1 mb-4"
-            href="/blog/community-messaging-fit"
-          >
-            <div className="w-full flex flex-col">
-              <p className="text-neutral-900  tracking-tight">
-				Sepasang Kaki
+				Masa lalu
               </p>
               <p className="text-neutral-600 ">
                 66,758 views
@@ -83,21 +39,21 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/funding-open-source"
+            href="https://arqn09.blogspot.com/2022/11/merenung.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Funding Open Source
+                Merenung
               </p>
               <p className="text-neutral-600 ">
                 25,036 views
               </p>
             </div>
           </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="/blog/backend">
+          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2022/11/tidak-ada-yang-sama.html">
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                2023 State of Databases for Serverless &amp; Edge
+                Tidak Ada Yang Sama
               </p>
               <p className="text-neutral-600 ">
                 69,685 views
@@ -106,21 +62,21 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/react-frameworks"
+            href="https://arqn09.blogspot.com/2022/11/sudah-ada.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Why You Should Use Link React Framework
+                Sudah Ada
               </p>
               <p className="text-neutral-600 ">
                 27,453 views
               </p>
             </div>
           </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="/blog/javascript">
+          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2022/11/ego.html">
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Why I'm Optimistic About JavaScript's Future
+                Ego
               </p>
               <p className="text-neutral-600 ">
                 23,525 views
@@ -129,11 +85,11 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/nextjs-conf-2022-recap"
+            href="https://arqn09.blogspot.com/2022/11/entah-sampai-kapan.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Behind the scenes: Next.js Conf 2022
+                Peran
               </p>
               <p className="text-neutral-600 ">
                 5,328 views
@@ -142,21 +98,21 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/developer-experience-examples"
+            href="https://arqn09.blogspot.com/2023/07/aqal-dan-kebiasaan.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                What Makes Link Great Developer Experience?
+                Aqal Dan Kebiasaan
               </p>
               <p className="text-neutral-600 ">
                 37,676 views
               </p>
             </div>
           </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="/blog/heroku">
+          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2022/07/kendali-masalah.html">
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                The Story of Heroku
+                Kendali Masalah
               </p>
               <p className="text-neutral-600 ">
                 40,784 views
@@ -165,11 +121,11 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/devrel-at-vercel"
+            href="https://arqn09.blogspot.com/2022/01/kendali-diri.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                What is Developer Relations?
+                Kendali Diri
               </p>
               <p className="text-neutral-600 ">
                 10,456 views
@@ -178,12 +134,11 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/image-gallery-supabase-tailwind-nextjs"
+            href="https://arqn09.blogspot.com/2022/11/ingatan-itu-yang-mengembalikan.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Building an Image Gallery with Next.js, Supabase, and Tailwind
-                CSS
+                Ingatan Itu Yang Mengembalikan
               </p>
               <p className="text-neutral-600 ">
                 29,670 views
@@ -192,21 +147,21 @@ const Blog = () => {
           </Link>
           <Link
             className="flex flex-col space-y-1 mb-4"
-            href="/blog/fundamentals-of-video"
+            href="https://arqn09.blogspot.com/2023/03/suaramu.html"
           >
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Developer's Guide to Video Production: Fundamentals of Video
+                Kumandangkanlah
               </p>
               <p className="text-neutral-600 ">
                 4,702 views
               </p>
             </div>
           </Link>
-          <Link className="flex flex-col space-y-1 mb-4" href="/blog/rust">
+          <Link className="flex flex-col space-y-1 mb-4" href="https://arqn09.blogspot.com/2023/04/kumandangkanlah-lagi.html">
             <div className="w-full flex flex-col">
               <p className="text-neutral-900  tracking-tight">
-                Rust Is The Future of JavaScript Infrastructure
+                Kumandangkanlah Lagi
               </p>
               <p className="text-neutral-600 ">
                 299,680 views

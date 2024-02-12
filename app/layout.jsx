@@ -1,6 +1,18 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavLayout from "./layout/layout"
+import localfont from "next/font/local"
+
+
+const myFont = localfont({
+  src: [
+    {
+      path: "../public/myFont.woff2",
+     
+    },
+  ],
+  variable: "--myFont",
+});
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,10 +25,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${myFont.variable} font-inter`}>
 		<NavLayout />
 		
-		<div className="mt-10 border px-6 md:px-0 lg:w-1/2 md:w-3/4 w-full mx-auto pt-5 overflow-x-hidden">
+		<div className="mt-10 border px-6 md:px-0 lg:w-1/2 md:w-3/4 w-full mx-auto pt-5 overflow-x-hidden relative">
 	  {children}
 		</div>
 	  </body>

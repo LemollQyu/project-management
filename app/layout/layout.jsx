@@ -1,11 +1,19 @@
 import Link from 'next/link'
 import LoginAuth from "../components/loginAuth"
+import NavDashboard from "../components/navdashboard"
+import Auth from "../components/auth"
 
 
-const Layout = () => {
+const Layout = async () => {
+	
+	const user = await Auth();
+	
 	return (
 		<>
-			<div className="px-6 md:px-0 md:w-3/4 lg:w-1/2 w-full md:h-10 h-5 flex justify-between flex-row-reverse md:flex gap-4 items-center mx-auto mt-10"> 
+		{ user ? <NavDashboard /> : null }
+			
+			
+			<div className="px-6 md:px-0 md:w-3/4 lg:w-1/2 w-full md:h-10 h-5 flex justify-between items-center flex-row-reverse md:flex gap-4 items-center mx-auto mt-10"> 
 			
 				<LoginAuth />
 				
