@@ -2,7 +2,7 @@ import Bookmark from "../../components/bookmark"
 import Link from 'next/link'
 import Auth from "../../components/auth"
 
-const ButtonBlog = async ({linkHref, kata}) => {
+const ButtonBlog = async ({linkHref, views, kata}) => {
 	const user = await Auth();
 	
 	return(
@@ -13,11 +13,11 @@ const ButtonBlog = async ({linkHref, kata}) => {
 			  {kata}
               </p>
               <p className="text-neutral-600 ">
-                1,036,970 views
+                {views} Views
               </p>
 			 
             </div>
-		   <Bookmark link={linkHref} email={user?.email}/>
+		   <Bookmark link={linkHref} email={user?.email} kata={kata}/>
           </Link>
 		
 		</>

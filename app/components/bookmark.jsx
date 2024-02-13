@@ -1,19 +1,19 @@
 'use client'
 
 
-const Bookmark = ({link , email}) => {
+const Bookmark = ({link , email, kata}) => {
 
 	const handle = async(event) => {
 		event.preventDefault()
 		
-		const data = { link, email }
+		const data = { link, email, kata }
 		  
-		const response = await fetch("/api/v1/collection" , {
+		const response = await fetch("/api/v1/koleksi" , {
 			method: "POST",
 			body: JSON.stringify(data)
 		})
-		const collection = await response.json()
-		console.log({ collection })
+		const koleksi = await response.json()
+		console.log({ koleksi })
 	}
 	
 	return (
