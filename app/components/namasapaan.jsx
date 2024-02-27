@@ -1,12 +1,12 @@
-import Auth from "./auth"
 
-const NamaSapaan = async () => {
-	const user = await Auth();
-	const nama = user ? `${user.name}` : "Unknown";
+
+const NamaSapaan =  () => {
+
+	const nama = "Annas Aulia Rahman"
 	
 	return (
 		<>
-			<h1 className="text-xl font-medium">Hey I'am   {nama} 👋</h1>
+			<h1 className="mb-8  text-l font-extralight">By {nama} | Published 28-02-2024</h1>
 		</>
 	)
 

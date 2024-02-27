@@ -6,24 +6,21 @@ export default function Box () {
 		<>
 			<div className="flex flex-col md:flex-row items-center gap-4 mt-10">
 			
-				<Link className="rounded-md w-full md:w-1/2 h-20 border flex flex-row justify-between px-3 items-center group" href="https://instagram/creatif_ar">
+				<Link className="rounded-md w-full md:w-1/2 h-20 border flex flex-row justify-between px-3 items-center group" href="https://tomps.id">
 				 
 					 <div className="flex gap-2 items-center ">
-						<div className="rounded-full w-16 h-16 border-2">
+						
 						
 							<Image
-							className={'rounded-full w-full h-full object-cover'}
-							src={'/p1.jpg'}
-							height={150}
-							width={150}
+							className={'w-full h-full object-cover'}
+							src={'/tomps.png'}
+							height={40}
+							width={90}
 							alt="Lemoll Qyuu"
 							/>
-						</div>
+						
 					
-						<div className="flex flex-col">
-							<p className="font-medium">@_nada12</p>
-							<p className="font-light">11.100 followers</p>
-						</div>
+				
 					 </div>
 						
 					<div className="text-neutral-700  transform transition-transform duration-300 group-hover:-rotate-12">
@@ -43,21 +40,20 @@ export default function Box () {
 				<Link className="rounded-md w-full md:w-1/2 h-20 border flex flex-row justify-between px-3 items-center group" href="https://www.instagram.com/creatif_ar/">
 				  
 					 <div className="flex gap-2 items-center ">
-						<div className="rounded-full w-16 h-16 border-2">
+						<div className="flex gap-2 items-center ">
+						
 						
 							<Image
-							className={'rounded-full w-full h-full object-cover'}
-							src={'/p2.jpg'}
-							height={150}
-							width={150}
+							className={'w-full h-full object-cover'}
+							src={'/logo-qontak.svg'}
+							height={40}
+							width={90}
 							alt="Lemoll Qyuu"
 							/>
-						</div>
+						
 					
-						<div className="flex flex-col">
-							<p className="font-medium">@creatif_ar</p>
-							<p className="font-light">576 followers</p>
-						</div>
+				
+					 </div>
 					 </div>
 						
 					<div className="text-neutral-700  transform transition-transform duration-300 group-hover:-rotate-12">

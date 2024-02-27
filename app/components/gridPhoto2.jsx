@@ -13,7 +13,7 @@ export default function gridImage(){
 
 				 <Image
 					className={'w-full h-full object-cover'}
-                    src={'/h1.jpg'}
+                    src={'/ha.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
@@ -25,7 +25,7 @@ export default function gridImage(){
 			
 				<Image
 					className={'w-full h-full object-cover'}
-                    src={'/v11.jpg'}
+                    src={'/va.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
@@ -37,7 +37,7 @@ export default function gridImage(){
 			
 				<Image
 					className={'w-full h-full object-cover'}
-                    src={'/v22.jpg'}
+                    src={'/vb.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
@@ -50,7 +50,7 @@ export default function gridImage(){
 
 				 <Image
 					className={'w-full h-full object-cover'}
-                    src={'/h2.jpg'}
+                    src={'/hb.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
@@ -62,7 +62,7 @@ export default function gridImage(){
 			
 				<Image
 					className={'w-full h-full object-cover'}
-                    src={'/h3.jpg'}
+                    src={'/hc.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
@@ -74,7 +74,7 @@ export default function gridImage(){
 			
 				<Image
 					className={'w-full h-full object-cover'}
-                    src={'/v3.jpg'}
+                    src={'/vb.jpg'}
                     height={150}
                     width={150}
                     alt="Lemoll Qyuu"
